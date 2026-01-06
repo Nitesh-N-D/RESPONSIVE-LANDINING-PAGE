@@ -3,36 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Landing Page</title>
+  <title>General Landing Page</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation Menu -->
   <header id="navbar">
-    <div class="logo">Prodigy</div>
+    <div class="logo">LandingPage</div>
+
     <nav>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
+  
+    <div class="theme-toggle">
+      <span>☀</span>
+      <label class="switch">
+        <input type="checkbox" id="themeSwitch">
+        <span class="slider"></span>
+      </label>
+      <span>🌙</span>
+    </div>
   </header>
 
-  <!-- Landing Section -->
-  <section class="landing">
-    <h1>Welcome to Prodigy Infotech</h1>
-    <p>Your gateway to professional tech experiences</p>
-    <button class="btn" onclick="alert('Thanks for getting started!')">Get Started</button>
+  <section class="hero" id="home">
+    <h1>Simple. Modern. Responsive.</h1>
+    <p>A clean landing page layout suitable for learning, demos, and projects.</p>
+    <div class="hero-buttons">
+      <button class="btn primary">Get Started</button>
+      <button class="btn outline">Explore</button>
+    </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>This section appears when the button is clicked.</p>
+  <section class="features" id="features">
+    <h2>Key Highlights</h2>
+
+    <div class="feature-grid">
+      <div class="card">
+        <h3>Responsive Layout</h3>
+        <p>Adapts smoothly across mobile, tablet, and desktop devices.</p>
+      </div>
+
+      <div class="card">
+        <h3>Modern Design</h3>
+        <p>Clean UI using gradients, cards, and smooth transitions.</p>
+      </div>
+
+      <div class="card">
+        <h3>Theme Toggle</h3>
+        <p>Switch between light and dark modes with a single click.</p>
+      </div>
+    </div>
   </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+    <h2>About This Page</h2>
+    <p>
+      This landing page is designed as a general template to demonstrate
+      responsive design, component-based layout, and interactive UI features.
+    </p>
+  </section>
+
+  
+  <section class="cta" id="contact">
+    <h2>Start Building Your Idea Today</h2>
+    <button class="btn primary">Contact Now</button>
+  </section>
+
+  <footer>
+    <p>© 2026 . All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
